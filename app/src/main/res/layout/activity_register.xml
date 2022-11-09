@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/topView"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:background="@drawable/ic_wave__2_"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topView" />
+
+    <TextView
+        android:id="@+id/topText1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="30dp"
+        android:text="新規ユーザーですか?"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+       app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/topText2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="20dp"
+        android:text="今すぐ登録！"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/topText1"/>
+
+
+    <EditText
+        android:id="@+id/InputEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Eメール"
+        android:layout_marginTop="20dp"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view2"  />
+
+    <EditText
+        android:id="@+id/InputConfirmEmail"
+        android:hint="Eメールを確認"
+        android:layout_marginTop="10dp"
+        android:inputType="textEmailAddress"
+        app:layout_constraintTop_toBottomOf="@id/InputEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/InputPassword"
+        android:hint="パスワード"
+        android:layout_marginTop="10dp"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@id/InputConfirmEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/InputConfirmPassword"
+        android:hint="パスワードを確認"
+        android:layout_marginTop="10dp"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@id/InputPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="サインアップ"
+        android:background="@drawable/round_bg"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/InputConfirmPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="397dp" />
+
+    <TextView
+        android:id="@+id/AlreadyHaveAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="アカンウトを持ってる？"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@id/btnRegister"
+        app:layout_constraintStart_toStartOf="@id/btnRegister"
+        app:layout_constraintTop_toBottomOf="@id/btnRegister" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
