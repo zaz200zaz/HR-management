@@ -51,43 +51,76 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/topText1"/>
 
-
     <EditText
-        android:id="@+id/InputEmail"
-        android:layout_width="match_parent"
+        android:id="@+id/inputEmail"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="Eメール"
-        android:layout_marginTop="20dp"
-        android:inputType="textEmailAddress"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/round_border"
+        android:drawableStart="@drawable/ic_email"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:hint="メール"
+        android:inputType="text"
+        android:padding="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/view2"  />
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
 
     <EditText
         android:id="@+id/InputConfirmEmail"
-        android:hint="Eメールを確認"
-        android:layout_marginTop="10dp"
-        android:inputType="textEmailAddress"
-        app:layout_constraintTop_toBottomOf="@id/InputEmail"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/round_border"
+        android:drawableStart="@drawable/ic_email"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:hint="メールを確認"
+        android:inputType="text"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputEmail" />
 
     <EditText
-        android:id="@+id/InputPassword"
+        android:id="@+id/inputPasswords"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/round_border"
+        android:drawableStart="@drawable/ic_lock"
+        android:drawablePadding="16dp"
+        android:ems="10"
         android:hint="パスワード"
-        android:layout_marginTop="10dp"
         android:inputType="textPassword"
-        app:layout_constraintTop_toBottomOf="@id/InputConfirmEmail"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/InputConfirmEmail" />
     <EditText
         android:id="@+id/InputConfirmPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/round_border"
+        android:drawableStart="@drawable/ic_lock"
+        android:drawablePadding="16dp"
+        android:ems="10"
         android:hint="パスワードを確認"
-        android:layout_marginTop="10dp"
         android:inputType="textPassword"
-        app:layout_constraintTop_toBottomOf="@id/InputPassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputPasswords" />
+
 
     <Button
         android:id="@+id/btnRegister"
@@ -109,7 +142,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:text="アカンウトを持ってる？"
-        android:textColor="@color/black"
+        android:textColor="@color/colorPrimaryDark"
         app:layout_constraintEnd_toEndOf="@id/btnRegister"
         app:layout_constraintStart_toStartOf="@id/btnRegister"
         app:layout_constraintTop_toBottomOf="@id/btnRegister" />
