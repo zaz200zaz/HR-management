@@ -17,7 +17,7 @@
         app:layout_constraintTop_toBottomOf="@id/aa"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:background="@drawable/round_border"
+        android:background="@drawable/square_border"
         android:text="XXXの履歴書"
         android:textSize="20sp"
         android:padding="10dp"

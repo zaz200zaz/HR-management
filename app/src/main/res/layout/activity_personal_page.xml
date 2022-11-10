@@ -13,7 +13,7 @@
         app:layout_constraintTop_toBottomOf="@id/Bar"
         app:layout_constraintStart_toStartOf="parent"
         android:text="一次面接"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="20dp"
         android:layout_marginLeft="15dp"
         android:textSize="15sp"
         android:padding="10dp"
@@ -28,7 +28,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginRight="15dp"
         android:hint="11月20日18時30分"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="20dp"
         android:layout_marginLeft="15dp"
         android:textSize="15sp"
         android:padding="10dp"
@@ -42,7 +42,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginRight="15dp"
         android:hint="合格"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="20dp"
         android:layout_marginLeft="10dp"
         android:textSize="15sp"
         android:padding="10dp"
@@ -63,10 +63,19 @@
        android:hint="コメントしてください"
         android:textColor="@color/black"
         android:padding="10dp"/>
+    <View
+        android:id="@+id/line1"
+        android:layout_width="0dp"
+        android:layout_height="3dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintStart_toStartOf="@id/commentOfFirstInterview"
+        app:layout_constraintEnd_toEndOf="@id/commentOfFirstInterview"
+        app:layout_constraintTop_toBottomOf="@id/commentOfFirstInterview"
+        android:layout_marginTop="10dp"/>
 
     <TextView
         android:id="@+id/secondInterview"
-        app:layout_constraintTop_toBottomOf="@id/commentOfFirstInterview"
+        app:layout_constraintTop_toBottomOf="@id/line1"
         app:layout_constraintStart_toStartOf="parent"
         android:text="二次面接"
         android:layout_marginTop="20dp"
@@ -79,7 +88,7 @@
         android:layout_height="wrap_content"/>
     <EditText
         android:id="@+id/secondInterviewCalendar"
-        app:layout_constraintTop_toBottomOf="@id/commentOfFirstInterview"
+        app:layout_constraintTop_toBottomOf="@id/line1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginRight="15dp"
@@ -94,7 +103,7 @@
         android:layout_height="wrap_content"/>
     <TextView
         android:id="@+id/resultOfSecondInterview"
-        app:layout_constraintTop_toBottomOf="@id/commentOfFirstInterview"
+        app:layout_constraintTop_toBottomOf="@id/line1"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginRight="15dp"
         android:hint="合格"
@@ -119,10 +128,19 @@
         android:hint="コメントしてください"
         android:textColor="@color/black"
         android:padding="10dp"/>
+    <View
+        android:id="@+id/line2"
+        android:layout_width="0dp"
+        android:layout_height="3dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintStart_toStartOf="@id/commentOfSecondInterview"
+        app:layout_constraintEnd_toEndOf="@id/commentOfSecondInterview"
+        app:layout_constraintTop_toBottomOf="@id/commentOfSecondInterview"
+        android:layout_marginTop="10dp"/>
 
     <TextView
         android:id="@+id/kensyuu"
-        app:layout_constraintTop_toBottomOf="@id/commentOfSecondInterview"
+        app:layout_constraintTop_toBottomOf="@id/line2"
         app:layout_constraintStart_toStartOf="parent"
         android:text="研修"
         android:layout_marginTop="20dp"
@@ -135,7 +153,7 @@
         android:layout_height="wrap_content"/>
     <EditText
         android:id="@+id/kensyuuCalendar"
-        app:layout_constraintTop_toBottomOf="@id/commentOfSecondInterview"
+        app:layout_constraintTop_toBottomOf="@id/line2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginRight="15dp"
@@ -150,7 +168,7 @@
         android:layout_height="wrap_content"/>
     <TextView
         android:id="@+id/resultOfKensyuu"
-        app:layout_constraintTop_toBottomOf="@id/commentOfSecondInterview"
+        app:layout_constraintTop_toBottomOf="@id/line2"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginRight="15dp"
         android:hint="合格"
@@ -175,10 +193,19 @@
         android:hint="コメントしてください"
         android:textColor="@color/black"
         android:padding="10dp"/>
+    <View
+        android:id="@+id/line3"
+        android:layout_width="0dp"
+        android:layout_height="3dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintStart_toStartOf="@id/commentOfKensyuu"
+        app:layout_constraintEnd_toEndOf="@id/commentOfKensyuu"
+        app:layout_constraintTop_toBottomOf="@id/commentOfKensyuu"
+        android:layout_marginTop="10dp"/>
 
     <TextView
         android:id="@+id/nyuusya"
-        app:layout_constraintTop_toBottomOf="@id/commentOfKensyuu"
+        app:layout_constraintTop_toBottomOf="@id/line3"
         app:layout_constraintStart_toStartOf="parent"
         android:text="入社"
         android:layout_marginTop="20dp"
@@ -191,7 +218,7 @@
         android:layout_height="wrap_content"/>
     <EditText
         android:id="@+id/nyuusyaCalendar"
-        app:layout_constraintTop_toBottomOf="@id/commentOfKensyuu"
+        app:layout_constraintTop_toBottomOf="@id/line3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginRight="15dp"
