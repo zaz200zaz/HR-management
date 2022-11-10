@@ -5,9 +5,9 @@
     android:layout_height="wrap_content"
     android:id="@+id/addLayout"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-    <TextView
+    <EditText
         android:id="@+id/name"
-        android:text="名前"
+       android:hint="名前"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="10dp"
@@ -20,7 +20,7 @@
         android:layout_height="wrap_content"/>
     <TextView
         android:id="@+id/condition"
-        android:text="状態"
+        android:hint="状態"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -31,7 +31,7 @@
         android:textColor="@color/colorPrimaryDark"
         android:padding="10dp"
         android:background="@drawable/square_border"/>
-    <TextView
+    <Button
         android:id="@+id/edit"
         android:text="編集"
         android:layout_width="wrap_content"
@@ -41,8 +41,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:textSize="20sp"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@color/white"
         android:padding="10dp"
-        android:background="@drawable/square_border"/>
+        android:background="@drawable/square_bg"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -222,6 +222,8 @@
     <Button
         android:id="@+id/hozon"
         android:text="保存"
+        android:textColor="@color/white"
+        android:textSize="20sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/round_bg"
