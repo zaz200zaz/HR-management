@@ -78,7 +78,7 @@
         android:drawableStart="@drawable/ic_lock"
         android:drawablePadding="16dp"
         android:ems="10"
-        android:hint="パスワード"
+        android:hint="パスワー1ド"
         android:inputType="textPassword"
         android:padding="16dp"
         app:layout_constraintEnd_toEndOf="parent"
