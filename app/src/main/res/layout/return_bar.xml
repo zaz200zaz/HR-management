@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/app_bar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/colorPrimaryDark"
+    android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+    <ImageView
+        android:id="@+id/Return"
+        android:src="@drawable/ic_return"
+        android:layout_width="30dp"
+        android:layout_height="30dp"/>
+</androidx.appcompat.widget.Toolbar>
