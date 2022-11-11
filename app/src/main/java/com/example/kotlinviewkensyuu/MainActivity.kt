@@ -26,13 +26,13 @@ class MainActivity : AppCompatActivity() {
     }
     fun loginHandle(){
         var email : String = inputEmail.text.toString()
-        var paswords : String = inputEmail.text.toString()
-        if (email=="admin@gmail.com"&&paswords == "123456"){
+        var password : String = inputEmail.text.toString()
+        if (email=="admin@gmail.com"&&password == "123456"){
 
             Toast.makeText(this,"ログイン成功",Toast.LENGTH_LONG).show()
         }
     }
-    fun singUp(){
+    fun signUp(){
         val intern = Intent(this,Register::class.java)
         startActivity(intern)
     }
