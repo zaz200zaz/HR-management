@@ -28,25 +28,28 @@ class MainActivity : AppCompatActivity() {
 
         //新規登録機能
         gotoRegister.setOnClickListener(View.OnClickListener {
-
+            signUp()
         })
 
     }
-    fun loginHandle(){
-        var email : String = inputEmail.text.toString()
-        var password : String = inputPassword.text.toString()
+    fun loginHandle() {
+        var email: String = inputEmail.text.toString()
+        var password: String = inputPassword.text.toString()
 
-        if (email=="admin@gmail.com"&&password == "123456"){
+        if (email == "admin@gmail.com" && password == "123456") {
 
-            Toast.makeText(this,"ログイン成功",Toast.LENGTH_LONG).show()
-            val intent=Intent(this,List::class.java)
+            Toast.makeText(this, "ログイン成功", Toast.LENGTH_LONG).show()
+            val intent = Intent(this, List::class.java)
             startActivity(intent)
+        } else {
+            Toast.makeText(this, "ログイン失敗", Toast.LENGTH_LONG).show()
         }
     }
     fun signUp(){
         val intern = Intent(this,Register::class.java)
         startActivity(intern)
     }
+
     fun new(){
 
     }
