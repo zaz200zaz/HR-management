@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         val btnLogin:Button=findViewById(R.id.btnLogin)
         val gotoRegister:TextView=findViewById(R.id.gotoRegister)
 
-
+        //アンキさん
         //login機能
         btnLogin.setOnClickListener(View.OnClickListener {
             loginHandle()
