@@ -8,15 +8,9 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
-import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.database.DatabaseReference
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
-
-    private lateinit var mAuth: FirebaseAuth
-    private lateinit var refUsers: DatabaseReference
-    private var FirebaseUserID: String = ""
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -38,26 +32,8 @@ class MainActivity : AppCompatActivity() {
         })
     }
     fun loginHandle() {
-        mAuth = FirebaseAuth.getInstance()
-
         var email: String = inputEmail.text.toString()
         var password: String = inputPassword.text.toString()
-        if (email ==""){
-            Toast.makeText(this, "メール 入力してくださいよ", Toast.LENGTH_LONG).show()
-        }else if (password==""){
-            Toast.makeText(this, "パスワード 入力してくださいよ", Toast.LENGTH_LONG).show()
-        }else{
-            mAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener{task ->
-                if (task.isSuccessful){
-                    Toast.makeText(this,"登録成功",Toast.LENGTH_LONG).show()
-                    startActivity(Intent(this,List::class.java).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK))
-                    finish()
-//                    Toast.makeText(this,"エラー：" + task.exception!!.message.toString(),Toast.LENGTH_LONG).show()
-                }else{
-                    Toast.makeText(this,"エラー：" + task.exception!!.message.toString(),Toast.LENGTH_LONG).show()
-                }
-            }
-        }
 
         if (email == "admin@gmail.com" && password == "123456") {
 
