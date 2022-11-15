@@ -30,7 +30,6 @@ class MainActivity : AppCompatActivity() {
         gotoRegister.setOnClickListener(View.OnClickListener {
             signUp()
         })
-
     }
     fun loginHandle() {
         var email: String = inputEmail.text.toString()
