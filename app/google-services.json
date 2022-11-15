@@ -1,0 +1,106 @@
+{
+  "project_info": {
+    "project_number": "538673951175",
+    "firebase_url": "https://wichattest-default-rtdb.firebaseio.com",
+    "project_id": "wichattest",
+    "storage_bucket": "wichattest.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:538673951175:android:3377345a60878d974d69e2",
+        "android_client_info": {
+          "package_name": "com.example.kotlinviewkensyuu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "538673951175-i6q68tdmjm47c65onl8ajdt6ctsd3v28.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrfA5SzF0QVXAJF9KCwHqiY8pkjSZQ3_M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "538673951175-i6q68tdmjm47c65onl8ajdt6ctsd3v28.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:538673951175:android:fb8ebbc90b82b6124d69e2",
+        "android_client_info": {
+          "package_name": "com.example.test3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "538673951175-508kjc2dku63o579b6t3pv0l07ffe5u4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.test3",
+            "certificate_hash": "9abc867090e56d6678c74937b7d41e2ee30d9881"
+          }
+        },
+        {
+          "client_id": "538673951175-i6q68tdmjm47c65onl8ajdt6ctsd3v28.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrfA5SzF0QVXAJF9KCwHqiY8pkjSZQ3_M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "538673951175-i6q68tdmjm47c65onl8ajdt6ctsd3v28.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:538673951175:android:70f994f31273a8134d69e2",
+        "android_client_info": {
+          "package_name": "com.example.wichat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "538673951175-i6q68tdmjm47c65onl8ajdt6ctsd3v28.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrfA5SzF0QVXAJF9KCwHqiY8pkjSZQ3_M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "538673951175-i6q68tdmjm47c65onl8ajdt6ctsd3v28.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
