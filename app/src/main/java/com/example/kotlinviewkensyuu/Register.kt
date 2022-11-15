@@ -112,6 +112,8 @@ class Register : AppCompatActivity() {
             }
 
     }
+    fun test(){
 
+    }
 }
 
