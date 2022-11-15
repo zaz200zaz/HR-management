@@ -1,13 +1,16 @@
 package com.example.kotlinviewkensyuu
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -15,11 +18,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        var inputEmail:EditText=findViewById(R.id.inputEmail)
-        var inputPassword:EditText=findViewById(R.id.inputPassword)
+
         val btnLogin:Button=findViewById(R.id.btnLogin)
         val gotoRegister:TextView=findViewById(R.id.gotoRegister)
-
 
         //login機能
         btnLogin.setOnClickListener(View.OnClickListener {
@@ -28,26 +29,36 @@ class MainActivity : AppCompatActivity() {
 
         //新規登録機能
         gotoRegister.setOnClickListener(View.OnClickListener {
-            signUp()
+            val intern = Intent(this,Register::class.java)
+            startActivity(intern)
         })
     }
+
     fun loginHandle() {
-        var email: String = inputEmail.text.toString()
-        var password: String = inputPassword.text.toString()
+        var email: String = inputEmail.editableText.toString()
+        var password: String = inputPassword.editableText.toString()
 
-        if (email == "admin@gmail.com" && password == "123456") {
+        if (email.isEmpty() || !email.contains("gmail")) {
+            Toast.makeText(this, "Eメールを確認してください", Toast.LENGTH_LONG).show()
+        }else if (password.isEmpty()||password.length<6) {
+            Toast.makeText(this, "パスワードを確認してください", Toast.LENGTH_LONG).show()
+        }else{
+            Firebase.auth.signInWithEmailAndPassword(email, password)
+                .addOnCompleteListener(this) { task ->
+                    if (task.isSuccessful) {
+                        Toast.makeText(this, "ログイン成功しました", Toast.LENGTH_LONG).show()
+                        val intent = Intent(this, List::class.java)
+                        intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK
+                        startActivity(intent)
+                        finish()
+                    } else {
+                        Toast.makeText(this, "ログイン失敗しました", Toast.LENGTH_LONG).show()
 
-            Toast.makeText(this, "ログイン成功", Toast.LENGTH_LONG).show()
-            val intent = Intent(this, List::class.java)
-            startActivity(intent)
-        } else {
-            Toast.makeText(this, "ログイン失敗", Toast.LENGTH_LONG).show()
+                    }
+                }
         }
     }
-    fun signUp(){
-        val intern = Intent(this,Register::class.java)
-        startActivity(intern)
-    }
+
 
 
     fun new(){
